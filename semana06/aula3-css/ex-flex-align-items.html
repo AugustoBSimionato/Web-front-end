@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exemplos - CSS - Aula 3</title>
+	<style>
+.stretch {
+	align-items: stretch;
+}
+
+.flex-start {
+	align-items: flex-start;
+}
+
+.flex-end {
+	align-items: flex-end;
+}
+
+.center {
+	align-items: center;
+}
+
+.baseline {
+	align-items: baseline;
+}
+
+.container {
+	max-width: 500px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid;
+}
+
+.column {
+	flex-direction: column;
+}
+
+.item {
+	flex: 1;
+	margin: 5px;
+	padding: 0 10px;
+	background: rgb(8, 155, 96);
+	color: beige;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.centralizado {
+	height: 400px;
+	justify-content: center;
+	align-items: center;
+}
+
+.centralizado .item {
+	flex: 0;
+	padding: 10px;
+}
+
+h1 {
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-size: 1.25em;
+}
+
+body {
+	font-family: monospace;
+}
+	</style>
+</head>
+<body>
+	<h1>align-items: stretch;</h1>
+	<section class="container stretch">
+		<div class="item">ODS 1</div>
+		<div class="item">ODS 2 - Fome zero e agricultura sustentável</div>
+		<div class="item">ODS 3 - Saúde e bem estar</div>
+		<div class="item">ODS 4</div>
+	</section>
+	
+	<h1>align-items: flex-start;</h1>
+	<section class="container flex-start">
+		<div class="item">ODS 1</div>
+		<div class="item">ODS 2 - Fome zero e agricultura sustentável</div>
+		<div class="item">ODS 3 - Saúde e bem estar</div>
+		<div class="item">ODS 4</div>
+	</section>
+	
+	<h1>align-items: flex-end;</h1>
+	<section class="container flex-end">
+		<div class="item">ODS 1</div>
+		<div class="item">ODS 2 - Fome zero e agricultura sustentável</div>
+		<div class="item">ODS 3 - Saúde e bem estar</div>
+		<div class="item">ODS 4</div>
+	</section>
+	
+	<h1>align-items: center;</h1>
+	<section class="container center">
+		<div class="item">ODS 1</div>
+		<div class="item">ODS 2 - Fome zero e agricultura sustentável</div>
+		<div class="item">ODS 3 - Saúde e bem estar</div>
+		<div class="item">ODS 4</div>
+	</section>
+	
+	<h1>align-items: baseline;</h1>
+	<section class="container baseline">
+		<div class="item">ODS 1</div>
+		<div class="item">ODS 2 - Fome zero e agricultura sustentável</div>
+		<div class="item">ODS 3 - Saúde e bem estar</div>
+		<div class="item">ODS 4</div>
+	</section>
+	
+	<h1>align-items: flex-stretch; flex-direction: column;</h1>
+	<section class="container stretch column">
+		<div class="item">ODS 1</div>
+		<div class="item">ODS 2 - Fome zero e agricultura sustentável</div>
+		<div class="item">ODS 3 - Saúde e bem estar</div>
+		<div class="item">ODS 4</div>
+	</section>
+	
+	<h1>align-items: flex-start; flex-direction: column;</h1>
+	<section class="container flex-start column">
+		<div class="item">ODS 1</div>
+		<div class="item">ODS 2 - Fome zero e agricultura sustentável</div>
+		<div class="item">ODS 3 - Saúde e bem estar</div>
+		<div class="item">ODS 4</div>
+	</section>
+	
+	<h1>align-items: flex-end; flex-direction: column;</h1>
+	<section class="container flex-end column">
+		<div class="item">ODS 1</div>
+		<div class="item">ODS 2 - Fome zero e agricultura sustentável</div>
+		<div class="item">ODS 3 - Saúde e bem estar</div>
+		<div class="item">ODS 4</div>
+	</section>
+	
+	<h1>align-items: center; flex-direction: column;</h1>
+	<section class="container center column">
+		<div class="item">ODS 1</div>
+		<div class="item">ODS 2 - Fome zero e agricultura sustentável</div>
+		<div class="item">ODS 3 - Saúde e bem estar</div>
+		<div class="item">ODS 4</div>
+	</section>
+	
+	<h1>align-items: baseline; flex-direction: column;</h1>
+	<section class="container baseline column">
+		<div class="item">ODS 1</div>
+		<div class="item">ODS 2 - Fome zero e agricultura sustentável</div>
+		<div class="item">ODS 3 - Saúde e bem estar</div>
+		<div class="item">ODS 4</div>
+	</section>
+	
+	<h1>align-items: center; e justify-content: center; (alinhamento central)</h1>
+	<section class="container centralizado">
+		<div class="item">ODS 1 - Erradicação da Pobreza.</div>
+	</section>
+</body>
+</html>

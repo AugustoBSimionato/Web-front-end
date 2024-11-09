@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exemplos - CSS - Aula 3</title>
+	<style>
+		.grow0 {
+			flex-grow: 0;
+		}
+
+		.grow1 {
+			flex-grow: 1;
+		}
+
+		.grow2 {
+			flex-grow: 2;
+		}
+
+		.grow3 {
+			flex-grow: 3;
+		}
+
+		.item {
+			margin: 5px;
+			background: rgb(8, 155, 96);
+			color: beige;
+			text-align: center;
+			font-size: 1.5em;
+		}
+
+		.container {
+			max-width: 400px;
+			margin: 0 auto;
+			display: flex;
+			border: 1px solid;
+		}
+
+		h1 {
+			text-align: center;
+			margin: 20px 0 0 0;
+			font-size: 1.25em;
+			font-weight: normal;
+		}
+
+		body {
+			font-family: monospace;
+		}
+	</style>
+</head>
+<body>
+	<h1>flex-grow: 0;</h1>
+	<section class="container">
+		<div class="item grow0">ODS 1</div>
+		<div class="item grow0">ODS 2</div>
+		<div class="item grow0">ODS 3</div>
+	</section>
+	
+	<h1>flex-grow: 1;</h1>
+	<section class="container">
+		<div class="item grow1">ODS 1</div>
+		<div class="item grow1">ODS 2</div>
+		<div class="item grow1">ODS 3</div>
+	</section>
+	
+	<h1>flex-grow: 1; flex-grow: 1; flex-grow: 3;</h1>
+	<section class="container column-reverse">
+		<div class="item grow1">ODS 1</div>
+		<div class="item grow1">ODS 2</div>
+		<div class="item grow3">ODS 3</div>
+	</section>
+	
+	<h1>flex-grow: 1; flex-grow: 2; flex-grow: 3;</h1>
+	<section class="container column-reverse">
+		<div class="item grow1">ODS 1</div>
+		<div class="item grow2">ODS 2</div>
+		<div class="item grow3">ODS 3</div>
+	</section>
+</body>
+</html>
