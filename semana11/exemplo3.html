@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exemplo 3</title>
+    <style>
+        .italico {
+        font-style: italic;
+        }
+
+        .underline {
+        text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">Front-end</div>
+    <div>Back-end</div>
+    <div id="div3">Full-stack</div>
+    <button id="destacar">Destacar</button>
+
+    <script>
+        var elementos = document.querySelectorAll('#div1, #div3'); //obtem os elementos com esses IDS
+        var btnDestacar = document.getElementById('destacar'); //obtem o elemento botão
+
+        btnDestacar.addEventListener('click', function() { 
+            elementos.forEach(function(elem) { //itera sobre cada elemento
+                if (elem.classList.contains('italico', 'underline')) {
+                    elem.classList.remove('italico', 'underline'); //remove as classes
+                }else{
+                    elem.classList.add('italico', 'underline'); //adiciona as classes
+                }
+            });
+        });
+    </script>
+</body>
+</html>

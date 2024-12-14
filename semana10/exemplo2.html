@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 2</title>
+</head>
+
+<body>
+    <h1>HTML DOM Events</h1>
+    <p>Mova o mouse para ver a posição:</p>
+    <p id="pos_mouse"></p>
+    <script>
+        const posicaoMouse = document.getElementById("pos_mouse");
+        document.addEventListener('mousemove', (event) => {
+            const mouseX = event.clientX;
+            const mouseY = event.clientY;
+            posicaoMouse.textContent = `Posição X,Y do mouse: (${mouseX}, ${mouseY})`;
+        });
+    </script>
+</body>
+
+</html>

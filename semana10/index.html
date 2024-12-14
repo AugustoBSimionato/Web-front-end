@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos - JavaScript</title>
+</head>
+
+<body>
+    <main>
+        <section id="inicio">
+            <img id="ods-img" src="https://pactoglobal.org.br/wp-content/themes/pacto-global/storage/ods/March2019/3YvX29fWOMMJeUt0rDZK.png" alt="Logo da ODS 1" width="150px">
+        </section>
+        <section>
+            <h1>Objetivos de Desenvolvimento Sustentável</h1>
+            <p id="desc">Em 2015, a ONU propôs aos seus países membros uma nova agenda de
+                desenvolvimento sustentável para os próximos 15 anos, a Agenda 2030, composta pelos 17
+                Objetivos de Desenvolvimento Sustentável (ODS). </p>
+            <h2>Conheça mais</h2>
+            <p>Os Objetivos de Desenvolvimento Sustentável são um apelo global à ação para acabar
+                com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os
+                lugares, possam desfrutar de paz e de prosperidade.</p>
+        </section>
+        <section>
+            <button onclick="mudarCor('red');">Alterar cor</button>
+        </section>
+    </main>
+    <script type="text/javascript">
+        // var textos = document.getElementsByTagName("p");
+        // console.log(textos);
+        // console.log(document.getElementsByTagName("p")[1].innerHTML);
+        // console.log(document.getElementsByTagName("h2")[0]);
+
+        var img_ods = document.getElementById("ods-img");
+        var texto_alt = img_ods.getAttribute("src");
+        console.log(texto_alt);
+
+        function mudarCor(novaCor) {
+            var elemento = document.getElementsByTagName("p")[1];
+            elemento.style.color = novaCor;
+        }
+
+        // cria um novo elemento p
+        var novoParagrafo = document.createElement("h1");
+        // cria um texto para o elemento p
+        var textoNovo = document.createTextNode("Inserindo novo conteúdo sobre ODS!");
+        // faz um append do texto ao elemento p
+        novoParagrafo.appendChild(textoNovo);
+        // busca uma section a partir do ID “inicio”
+        var conteudo = document.getElementById("inicio");
+        // faz um append do parágrafo à section buscada
+        conteudo.appendChild(novoParagrafo);
+
+        // cria um novo elemento img
+        var novaImagem = document.createElement("img");
+        // define o atributo src para a imagem
+        novaImagem.src = "https://pactoglobal.org.br/wp-content/themes/pacto-global/storage/ods/March2019/3YvX29fWOMMJeUt0rDZK.png";
+        // define o atributo alt para a imagem
+        novaImagem.alt = "Descrição da imagem";
+        // busca uma section a partir do ID “inicio”
+        var conteudo = document.getElementById("inicio");
+        // faz um append da imagem à section buscada
+        conteudo.appendChild(novaImagem);
+
+        var meuElemento = document.getElementById("desc");
+        var conteudoHTML = meuElemento.innerHTML;
+        console.log(conteudoHTML);
+    </script>
+</body>
+
+</html>

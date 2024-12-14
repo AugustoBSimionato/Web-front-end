@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h2 onclick="addParagrafo()">Lista de tarefas</h2>
+        <input type="text" id="tarefa" placeholder="Informe a tarefa">
+        <span onclick="addElemento()" class="addBtn">Incluir</span>
+    </div>
+
+    <ul id="itemLista">
+        <li class="checked">Tomar café</li>
+        <li>Fazer compras</li>
+        <li>Entregar atividade no moodle</li>
+    </ul>
+    <script src="script.js"></script>
+</body>
+</html>

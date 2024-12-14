@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 1</title>
+</head>
+
+<body>
+    <h1>HTML DOM Events</h1>
+    <p>Informe uma frase:</p>
+    <input type="text" id="entrada_dados">
+    <p id="demo"></p>
+    <script>
+        const entrada = document.getElementById("entrada_dados");
+        const demo = document.getElementById("demo");
+        entrada.addEventListener('input', () => {
+            let texto = entrada.value;
+            demo.textContent = "Texto digitado: " + texto;
+        });
+    </script>
+</body>
+
+</html>

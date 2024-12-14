@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 3</title>
+</head>
+
+<body>
+    <h1>HTML DOM Events</h1>
+    <button id="clickBtn">Clique para Plantar uma Árvore</button>
+    <p id="contagem">Árvores plantadas: <span id="valorContador">0</span></p>
+    <script>
+        let contador = 0;
+        const clickBtn = document.getElementById("clickBtn");
+        const valorContador = document.getElementById("valorContador");
+        clickBtn.addEventListener('click', () => {
+            contador++;
+            valorContador.textContent = contador;
+            alert('Você plantou uma árvore!');
+        });
+    </script>
+</body>
+</html>

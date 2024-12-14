@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e0e0e0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.rules-container {
+    flex: 1;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rules-container ol {
+    padding-left: 20px;
+}
+
+.rules-container button {
+    display: block;
+    width: 35%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 auto;
+}
+
+.rules-container button:hover {
+    background-color: #45a049;
+}
+
+.rules-container .timer {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 30px;
+}
+
+.title h1 {
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.rules {
+    margin-bottom: 50px;
+}
+
+.rules-container button {
+    margin-bottom: 3.5rem;
+}
+
+.game-container {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.board {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+    
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+    text-transform: uppercase;
+    cursor: default;
+    text-transform: uppercase;
+}
+
+.cell:focus {
+    border-color: #666;
+}

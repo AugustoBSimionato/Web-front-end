@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exemplo 1</title>
+    <style>
+    .box {
+        border: 2px solid black;
+        margin: 20px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Elemento H1</h1>
+
+    <div>Elemento div</div>
+
+    <p>Primeiro elemento p.</p>
+    <p>Segundo elemento p.</p>
+
+    <div class="box">
+        <p>Elemento p dentro de uma div.</p>
+    </div>
+
+    <p>Clique no botão para alterar a cor de todos os elementos p.</p>
+    
+    <button onclick="alteraCor()">Alterar cor</button>
+
+    <script>
+        function alteraCor() {
+            var elementos = document.querySelectorAll("p");
+            var i;
+            for (i = 0; i < elementos.length; i++) {
+                elementos[i].style.backgroundColor = "yellow";
+            }
+        }
+    </script>
+</body>
+</html>
